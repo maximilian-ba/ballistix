@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.15)
 
+# Use new behavior when downloading content via FetchContent_Declare
+if(POLICY CMP0135)
+  cmake_policy(SET CMP0135 NEW)
+endif()
+
 project(Ballistix
     VERSION 0.1.0
     DESCRIPTION "A modern C++ ballistics simulation library"
