@@ -21,3 +21,8 @@ target_include_directories(Ballistix INTERFACE
     $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
 )
+
+# ---
+# Tests Section
+enable_testing()
+add_subdirectory(tests)
