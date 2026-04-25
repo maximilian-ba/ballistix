@@ -71,4 +71,4 @@ This project is licensed under the [GPL-3.0](LICENSE) - see the [LICENSE](LICENS
 
 While **Ballistix** is primarily a portfolio project to demonstrate high-performance C++ engineering, contributions, technical discussions, and feedback are highly welcome.
 
-If you'd like to discuss technical aspects, propose a feature, or report an issue, please check the [contributing guidelines](docs/contributing.md).
+If you'd like to discuss technical aspects, propose a feature, or report an issue, please check the [contributing guidelines](docs/CONTRIBUTING.md).
