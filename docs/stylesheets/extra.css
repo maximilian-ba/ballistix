@@ -1,0 +1,81 @@
+/* Fade Levels:
+    --light - B3 (70% opacity)
+    --lighter - 59 (35% opacity)
+    --lightest - 1A (10% opacity)
+*/
+
+:root {
+  /* Primary - Royal Blue */
+  --blx-primary:         #4169E1;
+  --blx-primary--light:  #4169E1B3;
+  --blx-primary--dark:   #3454b4;
+
+  /* Accent - Cyan */
+  --blx-accent:          #00FFFF;
+  --blx-accent--dark:    #008B8B;
+
+  /* Text & Background */
+  --blx-bright:          #F8F9FB;
+  --blx-bright--light:   #F8F9FBB3;
+  --blx-bright--dark:    #E5EAEF;
+
+  --blx-dark:            #1c1e21;
+  --blx-dark--light:     #1c1e21B3;
+  --blx-dark--dark:      #151515;
+}
+
+/* --- BALLISTIX LIGHT MODE --- */
+[data-md-color-scheme="ballistix-light"] {
+  /* Primary */
+  --md-primary-fg-color:         var(--blx-primary);
+  --md-primary-bg-color:         var(--blx-bright);
+
+  /* Accent */
+  --md-accent-fg-color:          var(--blx-accent--dark);
+  --md-accent-bg-color:          var(--blx-bright);
+
+  /* Text & Background */
+  --md-default-fg-color:         var(--blx-dark);
+  --md-default-fg-color--light:  var(--blx-dark--light);
+  --md-default-bg-color:         var(--blx-bright);
+  --md-default-bg-color--light:  var(--blx-bright--light);
+
+  --md-typeset-color:            var(--md-default-fg-color);
+  --md-typeset-a-color:          var(--md-accent-fg-color);
+
+  /* Code-Blocks */
+  --md-code-fg-color:            var(--blx-dark);
+  --md-code-bg-color:            var(--blx-bright--dark);
+}
+
+/* --- BALLISTIX DARK MODE --- */
+[data-md-color-scheme="ballistix-dark"] {
+  /* Primary */
+  --md-primary-fg-color:         var(--blx-primary);
+  --md-primary-bg-color:         var(--blx-bright);
+
+  /* Accent */
+  --md-accent-fg-color:          var(--blx-accent);
+  --md-accent-bg-color:          var(--blx-dark);
+
+  /* Text & Background */
+  --md-default-fg-color:         var(--blx-bright);
+  --md-default-fg-color--light:  var(--blx-bright--light);
+  --md-default-bg-color:         var(--blx-dark);
+  --md-default-bg-color--light:  var(--blx-dark--light);
+
+  --md-typeset-color:            var(--md-default-fg-color);
+  --md-typeset-a-color:          var(--md-accent-fg-color);
+
+  /* Code-Blocks */
+  --md-code-fg-color:            var(--blx-bright);
+  --md-code-bg-color:            var(--blx-dark--dark);
+  
+  /* Spacer */
+  --md-typeset-border-color:     var(--blx-primary);
+}
+
+/* Links */
+.md-typeset a:hover {
+  opacity: 0.7;
+}

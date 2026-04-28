@@ -4,6 +4,31 @@ site_description: The official documentation for the Ballistix project.
 plugins:
   - include-markdown
 
+theme:
+  name: material
+  palette:
+    # Bright Mode
+    - scheme: ballistix-light
+      primary: custom
+      accent: custom
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark Mode
+    - scheme: ballistix-dark
+      primary: custom
+      accent: custom
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  language: en
+
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Home: index.md
   - Project:
