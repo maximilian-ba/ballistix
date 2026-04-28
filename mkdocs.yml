@@ -6,4 +6,6 @@ plugins:
 
 nav:
   - Home: index.md
-  - Contributing: contributing.md
+  - Project:
+    - Contributing: contributing.md
+    - License: license.md
