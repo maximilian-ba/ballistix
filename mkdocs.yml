@@ -1,8 +1,9 @@
 site_name: Ballistix
 site_description: The official documentation for the Ballistix project.
 
-plugins:
-  - include-markdown
+markdown_extensions:
+  - pymdownx.snippets:
+      base_path: ["."]
 
 theme:
   name: material
@@ -32,5 +33,5 @@ extra_css:
 nav:
   - Home: index.md
   - Project:
-    - Contributing: contributing.md
-    - License: license.md
+    - Contributing: project/contributing.md
+    - License: project/license.md
