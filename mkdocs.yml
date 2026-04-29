@@ -10,6 +10,7 @@ markdown_extensions:
 
 theme:
   name: material
+  custom_dir: docs/overrides
   icon:
     repo: fontawesome/brands/github
   palette:
