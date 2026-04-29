@@ -37,7 +37,7 @@
   --md-primary-bg-color:            var(--blx-bright);
 
   /* Accent */
-  --md-accent-fg-color:             var(--blx-accent--dark);
+  --md-accent-fg-color:             var(--blx-accent);
   --md-accent-bg-color:             var(--blx-bright);
 
   /* Text & Background */
@@ -48,7 +48,7 @@
   --md-default-bg-color--light:     var(--blx-bright--light);
 
   --md-typeset-color:               var(--md-default-fg-color);
-  --md-typeset-a-color:             var(--md-accent-fg-color);
+  --md-typeset-a-color:             var(--blx-accent--dark);
 
   /* Code-Blocks */
   --md-code-fg-color:               var(--blx-dark);
@@ -63,7 +63,7 @@
   --md-primary-bg-color:            var(--blx-bright);
 
   /* Accent */
-  --md-accent-fg-color:             var(--blx-accent);
+  --md-accent-fg-color:             var(--blx-accent--dark);
   --md-accent-bg-color:             var(--blx-dark);
 
   /* Text & Background */
@@ -74,7 +74,7 @@
   --md-default-bg-color--light:     var(--blx-dark--light);
 
   --md-typeset-color:               var(--md-default-fg-color);
-  --md-typeset-a-color:             var(--md-accent-fg-color);
+  --md-typeset-a-color:             var(--blx-accent);
 
   /* Code-Blocks */
   --md-code-fg-color:               var(--blx-bright);
@@ -83,11 +83,6 @@
   
   /* Spacer */
   --md-typeset-border-color:        var(--blx-primary);
-}
-
-/* Links */
-.md-typeset a:hover {
-  opacity: 0.7;
 }
 
 .blx-icon {
