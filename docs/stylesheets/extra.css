@@ -1,7 +1,7 @@
 /* Fade Levels:
     --light - B3 (70% opacity)
-    --lighter - 59 (35% opacity)
-    --lightest - 1A (10% opacity)
+    --lighter - 80 (50% opacity) 
+    --lightest - 59 (35% opacity)
 */
 
 :root {
@@ -17,10 +17,14 @@
   /* Text & Background */
   --blx-bright:          #F8F9FB;
   --blx-bright--light:   #F8F9FBB3;
+  --blx-bright--lighter: #F8F9FB80;
+  --blx-bright--lightest:#F8F9FB59;
   --blx-bright--dark:    #E5EAEF;
 
   --blx-dark:            #1c1e21;
   --blx-dark--light:     #1c1e21B3;
+  --blx-dark--lighter:   #1c1e2180;
+  --blx-dark--lightest:  #1c1e2159;
   --blx-dark--dark:      #151515;
 
   --blx-icon-size:         1.125em;
@@ -29,52 +33,56 @@
 /* --- BALLISTIX LIGHT MODE --- */
 [data-md-color-scheme="ballistix-light"] {
   /* Primary */
-  --md-primary-fg-color:         var(--blx-primary);
-  --md-primary-bg-color:         var(--blx-bright);
+  --md-primary-fg-color:            var(--blx-primary);
+  --md-primary-bg-color:            var(--blx-bright);
 
   /* Accent */
-  --md-accent-fg-color:          var(--blx-accent--dark);
-  --md-accent-bg-color:          var(--blx-bright);
+  --md-accent-fg-color:             var(--blx-accent--dark);
+  --md-accent-bg-color:             var(--blx-bright);
 
   /* Text & Background */
-  --md-default-fg-color:         var(--blx-dark);
-  --md-default-fg-color--light:  var(--blx-dark--light);
-  --md-default-bg-color:         var(--blx-bright);
-  --md-default-bg-color--light:  var(--blx-bright--light);
+  --md-default-fg-color:            var(--blx-dark);
+  --md-default-fg-color--light:     var(--blx-dark--light);
+  --md-default-fg-color--lightest:  var(--blx-dark--lightest);
+  --md-default-bg-color:            var(--blx-bright);
+  --md-default-bg-color--light:     var(--blx-bright--light);
 
-  --md-typeset-color:            var(--md-default-fg-color);
-  --md-typeset-a-color:          var(--md-accent-fg-color);
+  --md-typeset-color:               var(--md-default-fg-color);
+  --md-typeset-a-color:             var(--md-accent-fg-color);
 
   /* Code-Blocks */
-  --md-code-fg-color:            var(--blx-dark);
-  --md-code-bg-color:            var(--blx-bright--dark);
+  --md-code-fg-color:               var(--blx-dark);
+  --md-code-bg-color:               var(--blx-bright--dark);
+  --md-code-bg-color--lighter:      var(--blx-bright--lighter);
 }
 
 /* --- BALLISTIX DARK MODE --- */
 [data-md-color-scheme="ballistix-dark"] {
   /* Primary */
-  --md-primary-fg-color:         var(--blx-primary);
-  --md-primary-bg-color:         var(--blx-bright);
+  --md-primary-fg-color:            var(--blx-primary);
+  --md-primary-bg-color:            var(--blx-bright);
 
   /* Accent */
-  --md-accent-fg-color:          var(--blx-accent);
-  --md-accent-bg-color:          var(--blx-dark);
+  --md-accent-fg-color:             var(--blx-accent);
+  --md-accent-bg-color:             var(--blx-dark);
 
   /* Text & Background */
-  --md-default-fg-color:         var(--blx-bright);
-  --md-default-fg-color--light:  var(--blx-bright--light);
-  --md-default-bg-color:         var(--blx-dark);
-  --md-default-bg-color--light:  var(--blx-dark--light);
+  --md-default-fg-color:            var(--blx-bright);
+  --md-default-fg-color--light:     var(--blx-bright--light);
+  --md-default-fg-color--lightest:  var(--blx-bright--lightest);
+  --md-default-bg-color:            var(--blx-dark);
+  --md-default-bg-color--light:     var(--blx-dark--light);
 
-  --md-typeset-color:            var(--md-default-fg-color);
-  --md-typeset-a-color:          var(--md-accent-fg-color);
+  --md-typeset-color:               var(--md-default-fg-color);
+  --md-typeset-a-color:             var(--md-accent-fg-color);
 
   /* Code-Blocks */
-  --md-code-fg-color:            var(--blx-bright);
-  --md-code-bg-color:            var(--blx-dark--dark);
+  --md-code-fg-color:               var(--blx-bright);
+  --md-code-bg-color:               var(--blx-dark--dark);
+  --md-code-bg-color--lighter:      var(--blx-dark--lighter);
   
   /* Spacer */
-  --md-typeset-border-color:     var(--blx-primary);
+  --md-typeset-border-color:        var(--blx-primary);
 }
 
 /* Links */

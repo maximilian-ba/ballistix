@@ -32,6 +32,8 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   language: en
+  features:
+    - content.code.copy
 
 extra_css:
   - stylesheets/extra.css
