@@ -47,9 +47,13 @@ jobs:
           path: site
 
   deploy:
+    # Limit deploy to main branch only
+    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
 
     steps:
       - name: Deploy to GitHub Pages
+        # Skip this step when running locally with 'act'
+        if: ${{ !env.ACT }}
         uses: actions/deploy-pages@v4
