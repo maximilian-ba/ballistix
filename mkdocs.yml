@@ -1,0 +1,45 @@
+site_name: Ballistix
+site_description: The official documentation for the Ballistix project.
+
+repo_name: maximilian-ba/ballistix
+repo_url: https://github.com/maximilian-ba/ballistix
+
+markdown_extensions:
+  - pymdownx.snippets:
+      base_path: ["."]
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Bright Mode
+    - scheme: ballistix-light
+      primary: custom
+      accent: custom
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark Mode
+    - scheme: ballistix-dark
+      primary: custom
+      accent: custom
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  language: en
+  features:
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Project:
+    - Contributing: project/contributing.md
+    - License: project/license.md

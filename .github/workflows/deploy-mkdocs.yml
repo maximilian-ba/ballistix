@@ -1,0 +1,59 @@
+name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+    
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Dependencies installieren
+        run: pip install mkdocs mkdocs-material pymdown-extensions
+
+      - name: Build site
+        run: mkdocs build --strict
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    # Limit deploy to main branch only
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        # Skip this step when running locally with 'act'
+        if: ${{ !env.ACT }}
+        uses: actions/deploy-pages@v4
