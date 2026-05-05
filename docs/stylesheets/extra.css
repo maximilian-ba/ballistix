@@ -43,7 +43,9 @@
   /* Text & Background */
   --md-default-fg-color:            var(--blx-dark);
   --md-default-fg-color--light:     var(--blx-dark--light);
+  --md-default-fg-color--lighter:   var(--blx-dark--lighter);
   --md-default-fg-color--lightest:  var(--blx-dark--lightest);
+
   --md-default-bg-color:            var(--blx-bright);
   --md-default-bg-color--light:     var(--blx-bright--light);
 
@@ -69,7 +71,9 @@
   /* Text & Background */
   --md-default-fg-color:            var(--blx-bright);
   --md-default-fg-color--light:     var(--blx-bright--light);
+  --md-default-fg-color--lighter:   var(--blx-bright--lighter);
   --md-default-fg-color--lightest:  var(--blx-bright--lightest);
+
   --md-default-bg-color:            var(--blx-dark);
   --md-default-bg-color--light:     var(--blx-dark--light);
 
