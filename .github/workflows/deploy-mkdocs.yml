@@ -36,7 +36,7 @@ jobs:
           python-version: "3.x"
 
       - name: Dependencies installieren
-        run: pip install mkdocs mkdocs-material pymdown-extensions
+        run: pip install mkdocs mkdocs-material pymdown-extensions mkdocs-panzoom-plugin
 
       - name: Build site
         run: mkdocs build --strict

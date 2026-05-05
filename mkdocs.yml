@@ -7,6 +7,18 @@ repo_url: https://github.com/maximilian-ba/ballistix
 markdown_extensions:
   - pymdownx.snippets:
       base_path: ["."]
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - panzoom:
+      always_show_hint: true
+      include_selectors:
+        - ".mermaid"
 
 theme:
   name: material
@@ -40,6 +52,8 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Architecture:
+    - Context & Scope: architecture/03_context_and_scope.md
   - Project:
     - Contributing: project/contributing.md
     - License: project/license.md
