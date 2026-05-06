@@ -54,6 +54,7 @@ nav:
   - Home: index.md
   - Architecture:
     - Context & Scope: architecture/03_context_and_scope.md
+    - Design Decision: architecture/09-design-decisions.md
     - Decision Log (ADRs):
       - Overview: architecture/adr/index.md
       - 0001 - Core Abstraction: architecture/adr/0001-core-abstraction.md
