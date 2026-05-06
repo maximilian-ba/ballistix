@@ -1,4 +1,7 @@
-# ADR 0001: Static Abstraction Pattern for Computational Core Components
+# ADR 0001: Static Abstraction for Core Components
+
+**Status:** Accepted  
+**Date:** 2026-05-06
 
 ## Context
 The simulation engine consists of various mathematical components—such as solvers (integrators) and force models (physics)—that must be modular and interchangeable.
@@ -51,16 +54,16 @@ This allows the compiler to:
 
 Using virtual methods for Forces and Solvers.
 
-Reason for Rejection: The overhead of indirect calls and the prevention of compiler inlining are unacceptable for the target simulation frequency.
+**Reason for Rejection**: The overhead of indirect calls and the prevention of compiler inlining are unacceptable for the target simulation frequency.
 
 #### 2. Type Erasure (e.g., std::function)
 
 Wrapping logic in universal function containers.
 
-Reason for Rejection: Introduces performance hits due to potential heap allocations and pointer indirection; provides more flexibility than required for this high-performance core.
+**Reason for Rejection**: Introduces performance hits due to potential heap allocations and pointer indirection; provides more flexibility than required for this high-performance core.
 
 #### 3. Unconstrained Templates (Pre-C++20)
 
 Using standard templates without formal interface requirements.
 
-Reason for Rejection: Results in poor developer experience due to cryptic error messages and lacks the explicit interface documentation provided by Concepts.
+**Reason for Rejection**: Results in poor developer experience due to cryptic error messages and lacks the explicit interface documentation provided by Concepts.
