@@ -55,6 +55,7 @@ nav:
   - Architecture:
     - Context & Scope: architecture/03_context_and_scope.md
     - Decision Log (ADRs):
+      - Overview: architecture/adr/index.md
       - 0001 - Core Abstraction: architecture/adr/0001-core-abstraction.md
   - Project:
     - Contributing: project/contributing.md
