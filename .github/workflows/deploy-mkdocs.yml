@@ -17,6 +17,9 @@ on:
     
   workflow_dispatch:
 
+env:
+  ACT: false
+
 permissions:
   contents: read
   pages: write
