@@ -58,6 +58,7 @@ nav:
     - Decision Log (ADRs):
       - Overview: architecture/adr/index.md
       - 0001 - Core Abstraction: architecture/adr/0001-core-abstraction.md
+      - 0002 - Time-Stepping Strategy: architecture/adr/0002-time-stepping-strategy.md
   - Project:
     - Contributing: project/contributing.md
     - License: project/license.md
